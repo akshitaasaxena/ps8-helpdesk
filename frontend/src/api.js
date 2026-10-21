@@ -1,4 +1,4 @@
-const BASE_URL = (import.meta.env.VITE_API_URL || 'https://ps8-helpdesk.onrender.com').replace(/\/+$/, '');
+const BASE_URL = 'https://ps8-helpdesk.onrender.com';
 export const apiRequest = async (path, method = 'GET', body = null) => {
   const token = localStorage.getItem('token');
   const headers = {};
